@@ -1,8 +1,9 @@
 import React from 'react';
+import { TracingBeam } from './tracing-beam';
 
 export function DotBackgroundDemo() {
   return (
-    <main className="flex flex-col items-center justify-between p-24">
+    <main className="flex">
       <div className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center">
         {/* Radial gradient for the container to give a faded look */}
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
@@ -45,14 +46,13 @@ export function DotBackgroundDemo() {
         />
       </div> */}
 
-        {/* <TracingBeam children={undefined} /> */}
-
-        <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-center">
+        <div className="grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-center">
           <a
             href="https://github.com/vtonu"
             className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
             target="_blank"
             rel="noopener noreferrer">
+            {/* <TracingBeam children={undefined} /> */}
             <h2 className={`mb-3 text-2xl font-semibold`}>
               Phase One{' '}
               {/* <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">

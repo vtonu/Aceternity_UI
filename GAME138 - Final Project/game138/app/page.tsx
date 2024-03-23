@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import { TracingBeam } from './tracing-beam';
 import { DotBackgroundDemo } from './dottedBackground';
 
 export default function Home() {
