@@ -35,7 +35,7 @@ export function DotBackgroundDemo() {
         </div>
 
         <div className="grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-center">
-          {/* Phase One */}
+          {/* Phase 1 */}
           <a className="group rounded-lg border border-transparent px-5 py-4 ">
             <h2 className={`mb-3 text-2xl font-semibold`}>
               Phase One{' '}
@@ -46,6 +46,7 @@ export function DotBackgroundDemo() {
             <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>Ideas & references.</p>
           </a>
 
+          {/* Phase 2 */}
           <a className="group rounded-lg border border-transparent px-5 py-4">
             <h2 className={`mb-3 text-2xl font-semibold`}>
               Phase Two{' '}
@@ -56,6 +57,7 @@ export function DotBackgroundDemo() {
             <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>Rough blockout & textures.</p>
           </a>
 
+          {/* Phase 3 */}
           <a className="group rounded-lg border border-transparent px-5 py-4 ">
             <h2 className={`mb-3 text-2xl font-semibold`}>
               Phase Three{' '}
@@ -66,11 +68,10 @@ export function DotBackgroundDemo() {
             <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>Assets & composition.</p>
           </a>
 
+          {/* Final Phase */}
           <a className="group rounded-lg border border-transparent px-5 py-4 ">
             <h2 className={`mb-3 text-2xl font-semibold`}>Final Scene </h2>
-            <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-              Final renders & post-processing.
-            </p>
+            <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>Final renders.</p>
           </a>
         </div>
       </div>
