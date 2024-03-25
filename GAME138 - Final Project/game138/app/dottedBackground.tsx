@@ -7,7 +7,7 @@ export function DotBackgroundDemo() {
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_50%,black)]"></div>
       <p className="text-center text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-4">
-        Portfolio
+        Portfolio Piece
       </p>
       <div className="items-center justify-center font-mono text-sm lg:flex gap-8 pb-8">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
@@ -29,7 +29,7 @@ export function DotBackgroundDemo() {
               height={24}
               priority
             />
-            Victor Tonu
+            <code className="font-bold">Victor Tonu</code>
           </a>
         </div>
       </div>
@@ -44,13 +44,12 @@ export function DotBackgroundDemo() {
           </span> */}
           </h2>
           <p className={`text-sm opacity-50`}>
-            Ideas & references. <br></br> <br></br>{' '}
+            Ideas, references & inspiration. <br></br> <br></br>{' '}
           </p>
           <div className="flex justify-center pb-8 gap-4">
             <Image src="/phase1/FloorPlanEuropa.jpg" alt="ref" width={300} height={0} />
             <Image src="/phase1/RefBoard.jpg" alt="ref" width={300} height={0} />
             <Image src="/phase1/GlassChair_Ref.jpg" alt="ref" width={300} height={0} />
-            <Image src="/phase1/WallRef.jpg" alt="ref" width={300} height={0} />
             <Image src="/phase1/GreenChair_Neon_Ref.jpg" alt="ref" width={300} height={0} />
           </div>
         </a>
@@ -81,7 +80,7 @@ export function DotBackgroundDemo() {
           </span> */}
           </h2>
           <p className={` text-sm opacity-50`}>
-            Assets & composition. <br></br> <br></br>
+            Rough assets, textures & composition. <br></br> <br></br>
           </p>
           <div className="flex justify-center pb-8 gap-4">
             <Image src="/phase3/blockout.jpg" alt="ref" width={300} height={0} />
@@ -96,12 +95,25 @@ export function DotBackgroundDemo() {
         <a className="text-center">
           <h2 className={`mb-3 text-2xl font-semibold`}>Final Scene </h2>
           <p className={`text-sm opacity-50 text-balance`}>
-            Final renders. <br></br> <br></br>
+            Final renders submitted for the assignment. <br></br> <br></br>
           </p>
           <div className="flex justify-center pb-8 gap-4">
             <Image src="/final/Final1.jpg" alt="ref" width={550} height={0} />
             <Image src="/final/Final2.jpg" alt="ref" width={550} height={0} />
             <Image src="/final/Final3.jpg" alt="ref" width={550} height={0} />
+          </div>
+        </a>
+
+        {/* Optional Polishing & Post-Processing */}
+        <a className="text-center">
+          <h2 className={`mb-3 text-2xl font-semibold`}>Extra </h2>
+          <p className={`text-sm opacity-50 text-balance`}>
+            More polishing & post-processing in Unity. <br></br> <br></br>
+          </p>
+          <div className="flex justify-center pb-8 gap-4">
+            <Image src="/extra/scene1.jpg" alt="extra scene 1" width={550} height={0} />
+            <Image src="/extra/scene2.jpg" alt="extra scene 1" width={550} height={0} />
+            <Image src="/extra/scene3.jpg" alt="extra scene 1" width={550} height={0} />
           </div>
         </a>
       </div>
