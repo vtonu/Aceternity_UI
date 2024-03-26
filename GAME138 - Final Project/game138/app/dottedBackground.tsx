@@ -168,6 +168,9 @@ export function DotBackgroundDemo() {
             <Image src="/extra/scene2.jpg" alt="extra scene 1" width={550} height={0} />
             <Image src="/extra/scene3.jpg" alt="extra scene 1" width={550} height={0} />
           </div>
+          <h1 className="text-xs font-medium leading-none pt-4">
+            Powered by React, NextJS, TailwindCSS, Framer Motion
+          </h1>
         </a>
       </div>
     </div>
