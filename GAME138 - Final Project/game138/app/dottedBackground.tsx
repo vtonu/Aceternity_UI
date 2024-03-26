@@ -3,11 +3,11 @@ import Image from 'next/image';
 
 export function DotBackgroundDemo() {
   return (
-    <div className=" dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative grid items-start">
+    <div className=" dark:bg-black bg-white  dark:bg-dot-white/[0.3] bg-dot-black/[0.2] relative grid items-start">
       {/* Radial gradient for the container to give a faded look */}
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_50%,black)]"></div>
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_60%,black)]"></div>
       <p className="text-center text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-4">
-        Portfolio Piece
+        Art Deco Scene
       </p>
       <div className="items-center justify-center font-mono text-sm lg:flex gap-8 pb-8">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
@@ -44,13 +44,14 @@ export function DotBackgroundDemo() {
           </span> */}
           </h2>
           <p className={`text-sm opacity-50`}>
-            Ideas, references & inspiration. <br></br> <br></br>{' '}
+            Ideas & references.<br></br> <br></br>{' '}
           </p>
           <div className="flex justify-center pb-8 gap-4">
             <Image src="/phase1/FloorPlanEuropa.jpg" alt="ref" width={300} height={0} />
             <Image src="/phase1/RefBoard.jpg" alt="ref" width={300} height={0} />
             <Image src="/phase1/GlassChair_Ref.jpg" alt="ref" width={300} height={0} />
             <Image src="/phase1/GreenChair_Neon_Ref.jpg" alt="ref" width={300} height={0} />
+            <Image src="/phase1/WallRef.jpg" alt="ref" width={300} height={0} />
           </div>
         </a>
 
@@ -63,7 +64,7 @@ export function DotBackgroundDemo() {
           </span> */}
           </h2>
           <p className={`text-sm opacity-50`}>
-            Rough blockout & textures. <br></br> <br></br>
+            Rough blockout & textures.<br></br> <br></br>
           </p>
           <div className="flex justify-center pb-8 gap-4">
             <Image src="/phase2/Phase1 - Rough Blockout.jpg" alt="ref" width={780} height={0} />
@@ -80,7 +81,7 @@ export function DotBackgroundDemo() {
           </span> */}
           </h2>
           <p className={` text-sm opacity-50`}>
-            Rough assets, textures & composition. <br></br> <br></br>
+            Rough assets & composition. <br></br> <br></br>
           </p>
           <div className="flex justify-center pb-8 gap-4">
             <Image src="/phase3/blockout.jpg" alt="ref" width={300} height={0} />
@@ -95,7 +96,7 @@ export function DotBackgroundDemo() {
         <a className="text-center">
           <h2 className={`mb-3 text-2xl font-semibold`}>Final Scene </h2>
           <p className={`text-sm opacity-50 text-balance`}>
-            Final renders submitted for the assignment. <br></br> <br></br>
+            Final renders submitted for the assignment.<br></br> <br></br>
           </p>
           <div className="flex justify-center pb-8 gap-4">
             <Image src="/final/Final1.jpg" alt="ref" width={550} height={0} />
@@ -106,9 +107,9 @@ export function DotBackgroundDemo() {
 
         {/* Optional Polishing & Post-Processing */}
         <a className="text-center">
-          <h2 className={`mb-3 text-2xl font-semibold`}>Extra </h2>
+          <h2 className={`mb-3 text-2xl font-semibold`}>Post-Processing</h2>
           <p className={`text-sm opacity-50 text-balance`}>
-            More polishing & post-processing in Unity. <br></br> <br></br>
+            Additional polishing in Unity.<br></br> <br></br>
           </p>
           <div className="flex justify-center pb-8 gap-4">
             <Image src="/extra/scene1.jpg" alt="extra scene 1" width={550} height={0} />
