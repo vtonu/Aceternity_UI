@@ -5,7 +5,7 @@ export function DotBackgroundDemo() {
   return (
     <div className=" dark:bg-black bg-white  dark:bg-dot-white/[0.3] bg-dot-black/[0.2] relative grid items-start">
       {/* Radial gradient for the container to give a faded look */}
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_60%,black)]"></div>
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_50%,black)]"></div>
       <p className="text-center text-5xl font-bold relative bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-500 py-8">
         Art Deco Scene
       </p>
@@ -168,8 +168,24 @@ export function DotBackgroundDemo() {
             <Image src="/extra/scene2.jpg" alt="extra scene 1" width={550} height={0} />
             <Image src="/extra/scene3.jpg" alt="extra scene 1" width={550} height={0} />
           </div>
-          <h1 className="text-xs font-medium leading-none pt-4">
-            Powered by React, NextJS, TailwindCSS, Framer Motion
+          <h1 className="text-xs font-medium leading-none pt-4 pb-4 flex justify-center items-center gap-2">
+            Powered by{' '}
+            <button className="px-4 py-2 backdrop-blur-sm border bg-blue-300/10 border-blue-500/20 text-white  text-center rounded">
+              React
+              <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-blue-500 to-transparent" />
+            </button>
+            <button className="px-4 py-2 backdrop-blur-sm border bg-gray-300/10 border-gray-500/20 text-white  text-center rounded">
+              NextJS
+              <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-zinc-500 to-transparent" />
+            </button>
+            <button className="px-4 py-2 backdrop-blur-sm border bg-sky-400/10 border-sky-400/20 text-white  text-center rounded">
+              TailwindCSS
+              <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-sky-400 to-transparent" />
+            </button>
+            <button className="px-4 py-2 backdrop-blur-sm border bg-fuchsia-300/10 border-fuchsia-500/20 text-white  text-center rounded">
+              Framer Motion
+              <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-fuchsia-500 to-transparent" />
+            </button>
           </h1>
         </a>
       </div>
