@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { TextRevealCardPreview } from './textReveal';
 
 export function DotBackgroundDemo() {
   return (
@@ -38,15 +39,17 @@ export function DotBackgroundDemo() {
       <div className="flex-col">
         {/* Phase 1 */}
         <a className="text-center ">
-          <h2 className={`mb-3 text-2xl font-semibold`}>
+          {/* <h2 className={`text-2xl font-semibold`}>
             Phase One{' '}
-            {/* <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-            -&gt;
-          </span> */}
-          </h2>
-          <p className={`text-sm opacity-50`}>
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2> */}
+
+          {/* <p className={`text-sm opacity-30`}>
             Ideas & references.<br></br>{' '}
-          </p>
+          </p> */}
+          <TextRevealCardPreview />
           <div className="lg:flex justify-center pb-8 gap-4">
             <Image
               src="/phase1/FloorPlanEuropa.jpg"
@@ -88,13 +91,13 @@ export function DotBackgroundDemo() {
 
         {/* Phase 2 */}
         <a className="text-center">
-          <h2 className={`mb-3 text-2xl font-semibold`}>
+          <h2 className={`text-2xl font-semibold`}>
             Phase Two{' '}
             {/* <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
             -&gt;
           </span> */}
           </h2>
-          <p className={`text-sm opacity-50`}>
+          <p className={`text-sm opacity-40`}>
             Rough blockout & textures.<br></br> <br></br>
           </p>
           <div className="lg:flex justify-center pb-8 gap-4">
@@ -106,13 +109,13 @@ export function DotBackgroundDemo() {
 
         {/* Phase 3 */}
         <a className="text-center">
-          <h2 className={`mb-3 text-2xl font-semibold`}>
+          <h2 className={`text-2xl font-semibold`}>
             Phase Three{' '}
             {/* <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
             -&gt;
           </span> */}
           </h2>
-          <p className={` text-sm opacity-50`}>
+          <p className={` text-sm opacity-40`}>
             Rough assets & composition. <br></br> <br></br>
           </p>
           <div className="lg:flex justify-center pb-8 gap-4">
@@ -145,8 +148,8 @@ export function DotBackgroundDemo() {
 
         {/* Final Phase */}
         <a className="text-center">
-          <h2 className={`mb-3 text-2xl font-semibold`}>Final Scene </h2>
-          <p className={`text-sm opacity-50 text-balance`}>
+          <h2 className={`text-2xl font-semibold`}>Final Scene </h2>
+          <p className={`text-sm opacity-40 text-balance`}>
             Final renders submitted for the assignment.<br></br> <br></br>
           </p>
           <div className="lg:flex justify-center pb-8 gap-4">
@@ -159,8 +162,8 @@ export function DotBackgroundDemo() {
 
         {/* Optional Polishing & Post-Processing */}
         <a className="text-center">
-          <h2 className={`mb-3 text-2xl font-semibold`}>Post-Processing</h2>
-          <p className={`text-sm opacity-50 text-balance`}>
+          <h2 className={`text-2xl font-semibold`}>Post-Processing</h2>
+          <p className={`text-sm opacity-40 text-balance`}>
             Additional polishing in Unity.<br></br> <br></br>
           </p>
           <div className="lg:flex justify-center pb-8 gap-4">
@@ -189,6 +192,10 @@ export function DotBackgroundDemo() {
             <button className="px-4 py-2 backdrop-blur-sm border bg-fuchsia-300/10 border-fuchsia-500/20 text-white  text-center rounded">
               Framer Motion
               <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-fuchsia-500 to-transparent" />
+            </button>
+            <button className="px-4 py-2 backdrop-blur-sm border bg-gray-300/10 border-gray-500/20 text-white  text-center rounded">
+              Aceternity UI
+              <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-cyan-500 to-transparent" />
             </button>
           </h1>
         </a>
