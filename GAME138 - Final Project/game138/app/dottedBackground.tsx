@@ -50,6 +50,7 @@ export function DotBackgroundDemo() {
             Ideas & references.<br></br>{' '}
           </p> */}
           <TextRevealCardPreview />
+
           <div className="lg:flex justify-center pb-8 gap-4">
             <Image
               src="/phase1/FloorPlanEuropa.jpg"

@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState, memo } from 'react';
 import { motion } from 'framer-motion';
 import { twMerge } from 'tailwind-merge';
 import { cn } from '@/utils/cn';
+import { SparklesCore } from './sparkles';
 
 export const TextRevealCard = ({
   text,
@@ -110,7 +111,16 @@ export const TextRevealCard = ({
           <p className="text-base sm:text-[3rem] py-10 font-bold bg-clip-text text-transparent bg-[#323238]">
             {text}
           </p>
-          <MemoizedStars />
+          {/* <MemoizedStars /> */}
+          <SparklesCore
+            id="tsparticlesfullpage"
+            background="transparent"
+            minSize={0.6}
+            maxSize={1.4}
+            particleDensity={100}
+            className="w-full h-full"
+            particleColor="#FFFFFF"
+          />
         </div>
       </div>
     </div>
