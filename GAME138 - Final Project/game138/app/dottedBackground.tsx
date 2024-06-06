@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import { TextRevealCardPreview } from './textReveal';
+import { CardBody, CardContainer, CardItem } from './3d-card';
+import Link from 'next/link';
 
 export function DotBackgroundDemo() {
   return (
@@ -36,79 +38,122 @@ export function DotBackgroundDemo() {
         </div>
       </div>
 
-      <div className="flex-col">
-        {/* Phase 1 */}
+      <div className="flex-col ">
         <a className="text-center ">
-          {/* <h2 className={`text-2xl font-semibold`}>
+          <h2 className={`text-2xl font-semibold`}>
             Phase One{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+            {/* <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
-            </span>
-          </h2> */}
+            </span> */}
+          </h2>
 
-          {/* <p className={`text-sm opacity-30`}>
-            Ideas & references.<br></br>{' '}
-          </p> */}
-          <TextRevealCardPreview />
+          <p className={`text-sm opacity-30 w-1/2 mx-auto`}>
+            Ideas & references
+            <br></br>
+            <br></br>My primary inspiration came from sleek, modern designs featuring a glass chair
+            and a neon green glass aesthetic. I explored various sources, including contemporary
+            furniture designs and futuristic visual styles, to create a unique and visually
+            appealing concept.{' '}
+          </p>
+          {/* <TextRevealCardPreview /> */}
 
-          <div className="lg:flex justify-center pb-8 gap-4">
-            <Image
-              src="/phase1/FloorPlanEuropa.jpg"
-              alt="ref"
-              width={300}
-              height={0}
-              className="object-contain rounded"
-            />
-            <Image
-              src="/phase1/RefBoard.jpg"
-              alt="ref"
-              width={300}
-              height={0}
-              className="object-contain rounded"
-            />
-            <Image
-              src="/phase1/GlassChair_Ref.jpg"
-              alt="ref"
-              width={300}
-              height={0}
-              className="object-contain rounded"
-            />
-            <Image
-              src="/phase1/GreenChair_Neon_Ref.jpg"
-              alt="ref"
-              width={300}
-              height={0}
-              className="object-contain rounded"
-            />
-            <Image
-              src="/phase1/WallRef.jpg"
-              alt="ref"
-              width={300}
-              height={0}
-              className="object-contain rounded"
-            />
+          <div className="lg:flex justify-center gap-4">
+            <CardContainer className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                <CardItem
+                  translateZ="50"
+                  className="text-xs font-bold text-neutral-600 dark:text-white">
+                  Screenshot 1
+                </CardItem>
+
+                <CardItem translateZ="100" className="w-full mt-4">
+                  <Image
+                    src="/phase1/GlassChair_Ref.jpg"
+                    height="1000"
+                    width="1000"
+                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt="thumbnail"
+                  />
+                </CardItem>
+              </CardBody>
+            </CardContainer>
+            <CardContainer className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                <CardItem
+                  translateZ="50"
+                  className="text-xs font-bold text-neutral-600 dark:text-white">
+                  Screenshot 2
+                </CardItem>
+
+                <CardItem translateZ="100" className="w-full mt-4">
+                  <Image
+                    src="/phase1/GreenChair_Neon_Ref.jpg"
+                    height="1000"
+                    width="1000"
+                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt="thumbnail"
+                  />
+                </CardItem>
+              </CardBody>
+            </CardContainer>
           </div>
         </a>
 
-        {/* Phase 2 */}
         <a className="text-center">
-          <h2 className={`text-2xl font-semibold`}>
+          <h2 className={`text-2xl font-semibold `}>
             Phase Two{' '}
             {/* <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
             -&gt;
           </span> */}
           </h2>
-          <p className={`text-sm opacity-40`}>
+          <p className={`text-sm opacity-40 w-1/2 mx-auto`}>
             Rough blockout & textures.<br></br> <br></br>
+            In Phase Two of my project, I moved on to creating a rough blockout in Maya. Using basic
+            cubes and shapes, I sketched out the general layout of the room. I also applied textures
+            and materials roughly to get a sense of the overall aesthetic.
           </p>
           <div className="lg:flex justify-center pb-8 gap-4">
-            <Image src="/phase2/Phase1 - Rough Blockout.jpg" alt="ref" width={775} height={0} />
-            <Image src="/phase2/Phase1 - Rough Textures.jpg" alt="ref" width={775} height={0} />
+            <CardContainer className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                <CardItem
+                  translateZ="50"
+                  className="text-xs font-bold text-neutral-600 dark:text-white">
+                  Screenshot 1
+                </CardItem>
+
+                <CardItem translateZ="100" className="w-full mt-4">
+                  <Image
+                    src="/phase2/Phase1 - Rough Blockout.jpg"
+                    height="1000"
+                    width="1000"
+                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt="thumbnail"
+                  />
+                </CardItem>
+              </CardBody>
+            </CardContainer>
+            <CardContainer className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                <CardItem
+                  translateZ="50"
+                  className="text-xs font-bold text-neutral-600 dark:text-white">
+                  Screenshot 2
+                </CardItem>
+
+                <CardItem translateZ="100" className="w-full mt-4">
+                  <Image
+                    src="/phase2/Phase1 - Rough Textures.jpg"
+                    height="1000"
+                    width="1000"
+                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt="thumbnail"
+                  />
+                </CardItem>
+              </CardBody>
+            </CardContainer>
           </div>
           <br></br>
         </a>
-
-        {/* Phase 3 */}
         <a className="text-center">
           <h2 className={`text-2xl font-semibold`}>
             Phase Three{' '}
@@ -116,64 +161,158 @@ export function DotBackgroundDemo() {
             -&gt;
           </span> */}
           </h2>
-          <p className={` text-sm opacity-40`}>
-            Rough assets & composition. <br></br> <br></br>
+          <p className={` text-sm opacity-40 w-1/2 mx-auto`}>
+            Rough assets & composition. <br></br> <br></br>In Phase Three of my project, I focused
+            on developing rough assets and composition. I created preliminary models for key objects
+            and arranged them within the scene. This stage helped refine the layout and ensured that
+            the composition was visually balanced and aligned with the desired aesthetic.
           </p>
           <div className="lg:flex justify-center pb-8 gap-4">
-            <Image
-              src="/phase3/blockout.jpg"
-              alt="ref"
-              width={325}
-              height={0}
-              className="rounded"
-            />
-            <Image src="/phase3/door.jpg" alt="ref" width={325} height={0} className="rounded" />
-            <Image
-              src="/phase3/fountain.jpg"
-              alt="ref"
-              width={325}
-              height={0}
-              className="rounded"
-            />
-            <Image src="/phase3/plant.jpg" alt="ref" width={325} height={0} className="rounded" />
-            <Image
-              src="/phase3/textures.jpg"
-              alt="ref"
-              width={325}
-              height={0}
-              className="rounded"
-            />
+            <CardContainer className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                <CardItem
+                  translateZ="50"
+                  className="text-xs font-bold text-neutral-600 dark:text-white">
+                  Screenshot 1
+                </CardItem>
+
+                <CardItem translateZ="100" className="w-full mt-4">
+                  <Image
+                    src="/phase3/blockout.jpg"
+                    height="1000"
+                    width="1000"
+                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt="thumbnail"
+                  />
+                </CardItem>
+              </CardBody>
+            </CardContainer>
+            <CardContainer className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                <CardItem
+                  translateZ="50"
+                  className="text-xs font-bold text-neutral-600 dark:text-white">
+                  Screenshot 2
+                </CardItem>
+
+                <CardItem translateZ="100" className="w-full mt-4">
+                  <Image
+                    src="/phase3/fountain.jpg"
+                    height="1000"
+                    width="1000"
+                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt="thumbnail"
+                  />
+                </CardItem>
+              </CardBody>
+            </CardContainer>
           </div>
           <br></br>
         </a>
-
         {/* Final Phase */}
         <a className="text-center">
           <h2 className={`text-2xl font-semibold`}>Final Scene </h2>
-          <p className={`text-sm opacity-40 text-balance`}>
-            Final renders submitted for the assignment.<br></br> <br></br>
+          <p className={`text-sm opacity-40 text-balance w-1/2 mx-auto`}>
+            Final renders submitted for the assignment.<br></br> <br></br>In the Final Scene of my
+            project, I integrated all the assets, including contributions from my classmates. I
+            added lighting, vines, fog, and polished textures to enhance the overall look. The final
+            renders were then submitted for the assignment, showcasing the completed and refined 3D
+            environment.
           </p>
           <div className="lg:flex justify-center pb-8 gap-4">
-            <Image src="/final/Final1.jpg" alt="ref" width={550} height={0} />
-            <Image src="/final/Final2.jpg" alt="ref" width={550} height={0} />
-            <Image src="/final/Final3.jpg" alt="ref" width={550} height={0} />
+            <CardContainer className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                <CardItem
+                  translateZ="50"
+                  className="text-xs font-bold text-neutral-600 dark:text-white">
+                  Screenshot 1
+                </CardItem>
+
+                <CardItem translateZ="100" className="w-full mt-4">
+                  <Image
+                    src="/final/Final2.jpg"
+                    height="1000"
+                    width="1000"
+                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt="thumbnail"
+                  />
+                </CardItem>
+              </CardBody>
+            </CardContainer>
+            <CardContainer className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                <CardItem
+                  translateZ="50"
+                  className="text-xs font-bold text-neutral-600 dark:text-white">
+                  Screenshot 2
+                </CardItem>
+
+                <CardItem translateZ="100" className="w-full mt-4">
+                  <Image
+                    src="/final/Final3.jpg"
+                    height="1000"
+                    width="1000"
+                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt="thumbnail"
+                  />
+                </CardItem>
+              </CardBody>
+            </CardContainer>
           </div>
           <br></br>
         </a>
-
         {/* Optional Polishing & Post-Processing */}
         <a className="text-center">
           <h2 className={`text-2xl font-semibold`}>Post-Processing</h2>
-          <p className={`text-sm opacity-40 text-balance`}>
-            Additional polishing in Unity.<br></br> <br></br>
+          <p className={`text-sm opacity-40 text-balance w-1/2 mx-auto`}>
+            Additional polishing in Unity.<br></br> <br></br>In the Post-Processing phase, I further
+            polished the project in Unity. I updated textures, floor tiles, and wall textures, and
+            implemented better baked lighting. Using Shader Graph, I enhanced the fountain,
+            achieving a better overall aesthetic and graphics quality. This additional refinement
+            made the final scene even more visually appealing.
           </p>
           <div className="lg:flex justify-center pb-8 gap-4">
-            <Image src="/extra/scene3.jpg" alt="extra scene 1" width={550} height={0} />
-            <Image src="/extra/scene1.jpg" alt="extra scene 1" width={550} height={0} />
-            <Image src="/extra/scene2.jpg" alt="extra scene 1" width={550} height={0} />
+            <CardContainer className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                <CardItem
+                  translateZ="50"
+                  className="text-xs font-bold text-neutral-600 dark:text-white">
+                  Screenshot 1
+                </CardItem>
+
+                <CardItem translateZ="100" className="w-full mt-4">
+                  <Image
+                    src="/extra/scene1.jpg"
+                    height="1000"
+                    width="1000"
+                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt="thumbnail"
+                  />
+                </CardItem>
+              </CardBody>
+            </CardContainer>
+            <CardContainer className="inter-var">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                <CardItem
+                  translateZ="50"
+                  className="text-xs font-bold text-neutral-600 dark:text-white">
+                  Screenshot 2
+                </CardItem>
+
+                <CardItem translateZ="100" className="w-full mt-4">
+                  <Image
+                    src="/extra/scene2.jpg"
+                    height="1000"
+                    width="1000"
+                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    alt="thumbnail"
+                  />
+                </CardItem>
+              </CardBody>
+            </CardContainer>
           </div>
+          <div>Powered by:</div>
           <h1 className="text-xs font-medium leading-none pt-4 pb-4 lg:flex grid justify-center items-center gap-2 pointer-events-none">
-            Powered by{' '}
             <button className="px-4 py-2 backdrop-blur-sm border bg-gray-300/10 border-gray-500/20 text-white  text-center rounded">
               Vercel
               <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-gray-500 to-transparent" />
