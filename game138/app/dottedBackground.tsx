@@ -1,17 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
-import { TextRevealCardPreview } from './textReveal';
 import { CardBody, CardContainer, CardItem } from './3d-card';
-import Link from 'next/link';
+import { FlipWordsArtDeco } from './art-deco';
 
 export function DotBackgroundDemo() {
   return (
     <div className=" dark:bg-black bg-white  dark:bg-dot-white/[0.3] bg-dot-black/[0.2] relative grid items-start">
-      {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_50%,black)]"></div>
-      <p className="text-center text-5xl font-bold relative bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-500 py-8">
-        Art Deco Scene
-      </p>
+
+      <FlipWordsArtDeco />
       <div className="items-center justify-center font-mono text-sm lg:flex gap-2 pb-8">
         <div className="flex justify-center border border-emerald-300 bg-emerald-300/10 from-emerald-500/20 backdrop-blur-sm dark:border-neutral-800  dark:from-inherit  w-auto  rounded-md  bg-emerald-200 p-4 dark:bg-zinc-800/30">
           GAME138&nbsp;
@@ -21,7 +18,7 @@ export function DotBackgroundDemo() {
         <div className=" flex p-4 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           <a
             className="flex place-items-center gap-2"
-            href="https://github.com/vtonu"
+            href="https://github.com/vtonu/Aceternity_UI"
             target="_blank"
             rel="noopener noreferrer">
             By{' '}
@@ -37,7 +34,6 @@ export function DotBackgroundDemo() {
           </a>
         </div>
       </div>
-
       <div className="flex-col ">
         <a className="text-center ">
           <h2 className={`text-2xl font-semibold`}>
@@ -47,19 +43,18 @@ export function DotBackgroundDemo() {
             </span> */}
           </h2>
 
-          <p className={`text-sm opacity-30 w-1/2 mx-auto`}>
+          <p className={`text-sm opacity-40 w-1/2 mx-auto`}>
             Ideas & references
             <br></br>
-            <br></br>My primary inspiration came from sleek, modern designs featuring a glass chair
-            and a neon green glass aesthetic. I explored various sources, including contemporary
-            furniture designs and futuristic visual styles, to create a unique and visually
-            appealing concept.{' '}
+            <br></br>My primary inspiration for this project came from sleek, modern designs
+            featuring glass and a neon green aesthetic effect. I explored various sources and
+            futuristic visual styles, to create a unique and visually appealing concept.{' '}
           </p>
           {/* <TextRevealCardPreview /> */}
 
           <div className="lg:flex justify-center gap-4">
             <CardContainer className="inter-var">
-              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-4 border  ">
                 <CardItem
                   translateZ="50"
                   className="text-xs font-bold text-neutral-600 dark:text-white">
@@ -78,7 +73,7 @@ export function DotBackgroundDemo() {
               </CardBody>
             </CardContainer>
             <CardContainer className="inter-var">
-              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-4 border  ">
                 <CardItem
                   translateZ="50"
                   className="text-xs font-bold text-neutral-600 dark:text-white">
@@ -112,9 +107,9 @@ export function DotBackgroundDemo() {
             cubes and shapes, I sketched out the general layout of the room. I also applied textures
             and materials roughly to get a sense of the overall aesthetic.
           </p>
-          <div className="lg:flex justify-center pb-8 gap-4">
+          <div className="lg:flex justify-center pb-2 gap-4">
             <CardContainer className="inter-var">
-              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-4 border  ">
                 <CardItem
                   translateZ="50"
                   className="text-xs font-bold text-neutral-600 dark:text-white">
@@ -133,7 +128,7 @@ export function DotBackgroundDemo() {
               </CardBody>
             </CardContainer>
             <CardContainer className="inter-var">
-              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-4 border  ">
                 <CardItem
                   translateZ="50"
                   className="text-xs font-bold text-neutral-600 dark:text-white">
@@ -167,9 +162,9 @@ export function DotBackgroundDemo() {
             and arranged them within the scene. This stage helped refine the layout and ensured that
             the composition was visually balanced and aligned with the desired aesthetic.
           </p>
-          <div className="lg:flex justify-center pb-8 gap-4">
+          <div className="lg:flex justify-center pb-2 gap-4">
             <CardContainer className="inter-var">
-              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-4 border  ">
                 <CardItem
                   translateZ="50"
                   className="text-xs font-bold text-neutral-600 dark:text-white">
@@ -188,7 +183,7 @@ export function DotBackgroundDemo() {
               </CardBody>
             </CardContainer>
             <CardContainer className="inter-var">
-              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-4 border  ">
                 <CardItem
                   translateZ="50"
                   className="text-xs font-bold text-neutral-600 dark:text-white">
@@ -213,15 +208,14 @@ export function DotBackgroundDemo() {
         <a className="text-center">
           <h2 className={`text-2xl font-semibold`}>Final Scene </h2>
           <p className={`text-sm opacity-40 text-balance w-1/2 mx-auto`}>
-            Final renders submitted for the assignment.<br></br> <br></br>In the Final Scene of my
-            project, I integrated all the assets, including contributions from my classmates. I
-            added lighting, vines, fog, and polished textures to enhance the overall look. The final
-            renders were then submitted for the assignment, showcasing the completed and refined 3D
-            environment.
+            Final renders submitted.<br></br> <br></br>In the Final stage of my project, I
+            integrated all the assets, including contributions from my classmates. I added lighting,
+            vines, fog, and polished textures to enhance the overall look. The final renders were
+            then submitted for the assignment, showcasing the completed and refined 3D environment.
           </p>
-          <div className="lg:flex justify-center pb-8 gap-4">
+          <div className="lg:flex justify-center pb-2 gap-4">
             <CardContainer className="inter-var">
-              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-4 border  ">
                 <CardItem
                   translateZ="50"
                   className="text-xs font-bold text-neutral-600 dark:text-white">
@@ -240,7 +234,7 @@ export function DotBackgroundDemo() {
               </CardBody>
             </CardContainer>
             <CardContainer className="inter-var">
-              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-4 border  ">
                 <CardItem
                   translateZ="50"
                   className="text-xs font-bold text-neutral-600 dark:text-white">
@@ -263,17 +257,16 @@ export function DotBackgroundDemo() {
         </a>
         {/* Optional Polishing & Post-Processing */}
         <a className="text-center">
-          <h2 className={`text-2xl font-semibold`}>Post-Processing</h2>
+          <h2 className={`text-2xl font-semibold`}>Additional Processing</h2>
           <p className={`text-sm opacity-40 text-balance w-1/2 mx-auto`}>
-            Additional polishing in Unity.<br></br> <br></br>In the Post-Processing phase, I further
-            polished the project in Unity. I updated textures, floor tiles, and wall textures, and
-            implemented better baked lighting. Using Shader Graph, I enhanced the fountain,
-            achieving a better overall aesthetic and graphics quality. This additional refinement
-            made the final scene even more visually appealing.
+            More Post-Processing.<br></br> <br></br>I further polished the project. I updated
+            textures, floor tiles, and wall textures, and implemented better baked lighting. Using
+            Shader Graph, I enhanced the fountain, achieving a better overall aesthetic and graphics
+            quality. This additional refinement made the final scene even more visually appealing.
           </p>
-          <div className="lg:flex justify-center pb-8 gap-4">
+          <div className="lg:flex justify-center pb-2 gap-4">
             <CardContainer className="inter-var">
-              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-4 border  ">
                 <CardItem
                   translateZ="50"
                   className="text-xs font-bold text-neutral-600 dark:text-white">
@@ -292,7 +285,7 @@ export function DotBackgroundDemo() {
               </CardBody>
             </CardContainer>
             <CardContainer className="inter-var">
-              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+              <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-4 border  ">
                 <CardItem
                   translateZ="50"
                   className="text-xs font-bold text-neutral-600 dark:text-white">
